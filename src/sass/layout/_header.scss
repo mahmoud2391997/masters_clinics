@@ -181,7 +181,9 @@
 
 /* 2.2 navigation */
 
-
+#header{
+position: relative;
+}
 .wpo-site-header,
 .wpo-site-header-s2 {
 	/* navigation open and close btn hide for width screen */
@@ -1342,7 +1344,7 @@
 
 	.navbar-header .navbar-brand {
 		img {
-			max-width: 220px;
+			max-width: 147px;
 
 			@media (max-width:1399px) {
 				max-width: 170px;

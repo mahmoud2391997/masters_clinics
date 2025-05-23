@@ -13,7 +13,7 @@
 	overflow: hidden;
 
 	@include media-query(1199px) {
-		background: #EBF7FF;
+		background: #f6eecd;
 	}
 
 	.bg_shape {
@@ -85,12 +85,12 @@
 		}
 
 		h2 {
-			color: $light;
+			color: white;
 			font-family: $base-font;
 			font-size: 20px;
 			font-weight: 400;
 			border-radius: 20px;
-			background: linear-gradient(358deg, rgba(30, 99, 255, 0.10) -1077.15%, rgba(24, 124, 255, 0.10) -690.64%, rgba(18, 143, 255, 0.10) -213.19%, rgba(12, 169, 255, 0.10) 218.79%, rgba(6, 194, 255, 0.10) 764.46%, rgba(0, 219, 255, 0.10) 1196.44%);
+			background: linear-gradient(358deg, #A58532 -1077.15%, #CBA853  -690.64%,#B59542  -213.19%, #D7B763 218.79%, #DEBF6C 764.46%, #f0db83 1196.44%);
 			padding: 5px 20px;
 			display: inline-block;
 
@@ -237,7 +237,7 @@
 			&::before {
 				width: 120px;
 				height: 120px;
-				border: 1px solid #84B9DC;
+				border: 1px solid white;
 				background: transparent;
 
 				@include media-query(1199px) {

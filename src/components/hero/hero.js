@@ -16,7 +16,7 @@ const hero = () => {
         <section className="hero_section">
             <div className="bg_shape">
                 <svg viewBox="0 0 1920 1075" fill="none">
-                    <path d="M0 0H1920V1000C1920 1000 1632 619 962 917C292 1215 0 1000 0 1000V0Z" fill="#EBF7FF" />
+                    <path d="M0 0H1920V1000C1920 1000 1632 619 962 917C292 1215 0 1000 0 1000V0Z" fill="#f6eecd" />
                 </svg>
             </div>
             <div className="content">

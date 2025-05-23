@@ -1,0 +1,58 @@
+/* ContactBar.css */
+.contact-bar {
+  background-color: white;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 50;
+  width: 100vw;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon-button {
+    background-color: white;
+    color: #dec06a;
+  border-radius: 100%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 1px solid #dec06a;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.social-icon-button:hover {
+  background-color: #e5e7eb; /* equivalent to Tailwind's gray-200 */
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem;
+  color: #4b5563; /* Tailwind's gray-700 */
+  align-items: center;
+  margin-bottom: 0;
+}
+.contact-item p{
+  margin-bottom: 0;
+      color: #dec06a;
+      font-size: larger;
+
+
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+}
+
+.contact-item svg {
+      color: #dec06a;
+
+}

@@ -5,7 +5,7 @@ import { totalPrice } from "../../utils";
 import { connect } from "react-redux";
 import { removeFromCart } from "../../store/actions/action";
 
-
+import ContactBar from '../Navbar/socialMedia';
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
@@ -23,26 +23,28 @@ const Header = (props) => {
 
 
     return (
-        <header id="header">
+        <header id="header" className='w-full relative'>
             <div className={"" + props.hclass}>
+                
                 <nav className="navigation navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
                         <div className="row align-items-center">
                             <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <MobileMenu />
                             </div>
-                            <div className="col-lg-2 col-md-6 col-6">
+                            <div className="col-lg-2 col-md-6 col-6" >
                                 <div className="navbar-header">
                                     <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={props.Logo}
                                         alt="logo" /></Link>
                                 </div>
                             </div>
-                            <div className="col-lg-7 col-md-1 col-1">
-                                <div id="navbar" className="collapse navbar-collapse navigation-holder">
+                            <div className="col-lg-7 col-md-1 col-1 z-[50]">
+
+                                <div id="navbar" className="collapse navbar-collapse navigation-holder z-[50] relative">
                                     <button className="menu-close"><i className="ti-close"></i></button>
-                                    <ul className="nav navbar-nav mb-2 mb-lg-0">
+                                    <ul className="nav navbar-nav mb-2 mb-lg-0 text-[#000B47] z-[50]">
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="#">Home</Link>
+                                            <Link onClick={ClickHandler} className='text-[#000B47]' to="#">Home</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/home">Home style 1</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home-2">Home style 2</Link></li>

@@ -15,6 +15,7 @@ export default function Navbar(props) {
 
   return (
     <div className={className}>
+      
       <Header hclass={props.hclass} Logo={props.Logo} topbarClass={props.topbarClass} />
     </div>
   );

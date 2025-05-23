@@ -9,6 +9,7 @@ import './css/themify-icons.css';
 import './css/animate.css';
 import './css/flaticon_medically.css';
 import './sass/style.scss';
+import './index.css';
 
 
 import { PersistGate } from "redux-persist/integration/react";
