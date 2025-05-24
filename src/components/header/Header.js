@@ -33,8 +33,8 @@ const Header = (props) => {
                                 <MobileMenu />
                             </div>
                             <div className="col-lg-2 col-md-6 col-6" >
-                                <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={props.Logo}
+                                <div className="navbar-header" >
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home" ><img src={props.Logo}
                                         alt="logo" /></Link>
                                 </div>
                             </div>
