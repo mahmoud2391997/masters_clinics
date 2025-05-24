@@ -21,7 +21,7 @@ const HomePage = () => {
     return (
         <Fragment>
             <ContactBar />
-            <Navbar hclass={'wpo-site-header'}  Logo={Logo} />
+            <Navbar hclass={'wpo-site-header'}  Logo={"https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/dEYvd/lBmMUm3zZyt94KtrsYYdL6UrUEOoncu4UJnK9VhR.png"} />
             <Hero hclass={'static-hero'} />
             <AppointmentSection hclass={'appointment_section'}/>
             <ServiceSection hclass={"service_section section-padding"} />

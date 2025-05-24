@@ -5290,7 +5290,7 @@ img {
   }
 }
 .team_card .content span {
-  color: #0080D2;
+  color: var(--main);
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
