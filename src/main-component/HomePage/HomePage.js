@@ -14,7 +14,6 @@ import BlogSection from '../../components/BlogSection/BlogSection';
 import CtafromSection from '../../components/CtafromSection/CtafromSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
-import Logo from '../../images/masters Logo.png'
 import ContactBar from '../../components/Navbar/socialMedia';
 
 const HomePage = () => {

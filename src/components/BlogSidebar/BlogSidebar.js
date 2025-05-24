@@ -1,5 +1,4 @@
-import React from 'react';
-import { useParams } from 'react-router-dom'
+
 import { Link } from 'react-router-dom'
 import about from '../../images/blog/about-widget.jpg'
 import blogs from '../../api/blogs'

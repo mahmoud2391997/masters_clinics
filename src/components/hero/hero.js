@@ -1,10 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import VideoModal from '../ModalVideo/VideoModal';
 
-// image
-import Himg1 from '../../images/slider/1.png'
-import { ReactComponent as Hshape } from '../../images/slider/shape.svg';
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);

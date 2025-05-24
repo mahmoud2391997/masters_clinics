@@ -24,7 +24,7 @@ const CartPage = (props) => {
   const [shippingMethod, setShippingMethod] = useState('Free');
 
   const handleQuantityChange = (e, id) => {
-    const value = e.target.value;
+    // const value = e.target.value;
   };
 
   const handleShippingChange = (e) => {

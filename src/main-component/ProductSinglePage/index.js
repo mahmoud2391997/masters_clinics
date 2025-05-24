@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import  {Fragment, useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom'
 import { connect } from "react-redux";
 import Navbar from '../../components/Navbar/Navbar';
