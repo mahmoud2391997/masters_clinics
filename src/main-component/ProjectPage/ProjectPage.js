@@ -12,7 +12,7 @@ const ProjectPage = () => {
     return (
         <Fragment>
             <Navbar hclass={'wpo-site-header wpo-site-header-s2'} Logo={Logo} />
-            <PageTitle pageTitle={'Portfolio'} pagesub={'Portfolio'} />
+            <PageTitle pageTitle={'معرض الأعمال'} pagesub={'معرض الأعمال'} />
             <ProjectSection hclass={"project_section_s3 section-padding"} ShowSectionTitle={false} sliceStart={0} sliceEnd={6} />
             <CtafromSection hclass={'ctafrom_section'} />
             <Footer hclass={'wpo-site-footer'} />

@@ -7,66 +7,58 @@ import blogSingleImg1 from "../images/blog-details/1.jpg";
 import blogSingleImg2 from "../images/blog-details/2.jpg";
 import blogSingleImg3 from "../images/blog-details/3.jpg";
 
-
-
-
 const blogs = [
     {
         id: '1',
-        title: 'Tips for Orthopedic Surgery Patients',
-        title2: 'How Do Your Emotions Affect Your Physical Health?',
-        tag: 'Surgery',
-        slug: 'Why-Industry-Are-A-Juicy-Target-For-Cyberattack',
+        title: 'نصائح لمرضى جراحة العظام',
+        title2: 'كيف تؤثر مشاعرك على صحتك الجسدية؟',
+        tag: 'جراحة',
+        slug: 'نصائح-لمرضى-جراحة-العظام',
         screens: blogImg1,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,',
-        author: 'Anne William',
-        create_at: 'Sep 03, 2024',
+        description: 'نقدم في هذه المقالة أهم النصائح للمرضى الذين سيخضعون لجراحة العظام لضمان تعافٍ سريع وآمن',
+        author: 'آن ويليام',
+        create_at: '٣ سبتمبر ٢٠٢٤',
         blogSingleImg: blogSingleImg1,
-        comment: '35',
-        day: '28',
-        month: 'MAR',
+        comment: '٣٥',
+        day: '٢٨',
+        month: 'مارس',
         blClass: 'format-standard-image',
         animation: '1200',
     },
     {
         id: '2',
-        title: 'Transfusion strategy and heart surgery',
-        title2: 'Preserving Care Strategy Amidst Food Changes',
-        tag: 'Orthopedic',
-        slug: 'Why-Industry-Are-A-Juicy-Target-For',
+        title: 'استراتيجية نقل الدم وجراحة القلب',
+        title2: 'الحفاظ على استراتيجية الرعاية وسط تغيرات الغذاء',
+        tag: 'عظام',
+        slug: 'استراتيجية-نقل-الدم-وجراحة-القلب',
         screens: blogImg2,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,',
-        author: 'Anne William',
-        create_at: 'Sep 03, 2024',
+        description: 'كل ما تحتاج معرفته عن استراتيجيات نقل الدم أثناء جراحات القلب والممارسات المثلى',
+        author: 'آن ويليام',
+        create_at: '٣ سبتمبر ٢٠٢٤',
         blogSingleImg: blogSingleImg2,
-        comment: '35',
-        day: '28',
-        month: 'MAR',
+        comment: '٣٥',
+        day: '٢٨',
+        month: 'مارس',
         blClass: 'format-standard-image',
         animation: '1200',
     },
     {
         id: '3',
-        title: 'Get the Exercise for Limited Mobility',
-        title2: 'What Mutations Of SARS-CoV-2 Are Causing Concern?.',
-        tag: 'Surgery',
-        slug: 'Why-Industry-Are-A-Juicy',
+        title: 'تمارين للأشخاص ذوي الحركة المحدودة',
+        title2: 'ما هي تحورات فيروس كورونا التي تسبب القلق؟',
+        tag: 'جراحة',
+        slug: 'تمارين-للأشخاص-ذوي-الحركة-المحدودة',
         screens: blogImg3,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corporis, libero,',
-        author: 'Anne William',
-        create_at: 'Sep 03, 2024',
+        description: 'دليل شامل للتمارين الرياضية المناسبة للأشخاص الذين يعانون من محدودية في الحركة',
+        author: 'آن ويليام',
+        create_at: '٣ سبتمبر ٢٠٢٤',
         blogSingleImg: blogSingleImg3,
-        comment: '35',
-        day: '28',
-        month: 'MAR',
+        comment: '٣٥',
+        day: '٢٨',
+        month: 'مارس',
         blClass: 'format-standard-image',
         animation: '1200',
     },
-    
-
-
 ];
+
 export default blogs;
-
-
-

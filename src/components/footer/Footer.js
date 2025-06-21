@@ -12,89 +12,96 @@ const ClickHandler = () => {
 const Footer = (props) => {
    
     return (
-        <footer className={"" +props.hclass}>
-            <div className="wpo-upper-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div className="widget about-widget">
-                                <div className="logo widget-title">
-                                    <img src={logo} alt="blog" />
-                                </div>
-                                <p>Mattis inelit neque quis donec eleifnd amet. Amet sed et cursus eu euismod.
-                                    Egestas
-                                    in morbi tristique.</p>
-                                <div className="social-widget">
-                                    <ul>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-facebook-app-symbol"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-twitter"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-linkedin"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-instagram"></i></Link></li>
-                                    </ul>
-                                </div>
+        <footer className={`footer ${props.hclass}`} dir="rtl">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-4 col-md-6 col-12">
+                        <div className="footer-widget about-widget">
+                            <div className="logo">
+                                <img src={logo} alt="شعار العيادات المتخصصة" />
                             </div>
-                        </div>
-                        <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div className="widget link-widget">
-                                <div className="widget-title">
-                                    <h3>Quick Links</h3>
-                                </div>
+                            <p>نحن نقدم أفضل الخدمات الطبية المتخصصة مع فريق من الأطباء المؤهلين وأحدث المعدات الطبية لضمان حصولك على أفضل رعاية صحية.</p>
+                            <div className="social-links">
+                                <h4>تابعنا على:</h4>
                                 <ul>
-                                    <li><Link onClick={ClickHandler} to="/home">Home</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/about">About Us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/services">Services</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/blog">Latest News</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/doctor">Team</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div className="widget link-widget s2">
-                                <div className="widget-title">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <ul>
-                                    <li><Link onClick={ClickHandler} to="/project">Projects</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/cart">Cart</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/contact">Contact us</Link></li>
-                                    <li><Link onClick={ClickHandler} to="/faq">Faq</Link></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div className="widget contact-widget">
-                                <div className="widget-title">
-                                    <h3>Contact Us</h3>
-                                </div>
-                                <ul>
-                                    <li><i className="flaticon-email"></i><span>medically@gmail.com</span>
-                                    </li>
-                                    <li> <i className="flaticon-telephone"></i><span>(704) 555-0127
-                                        <br />(208) 555-0112</span></li>
-                                    <li><i className="flaticon-location-1"></i><span>4517 Washington Ave. <br/>
-                                        Manchter, Kentucky 495</span></li>
+                                    <li><a href="#" aria-label="فيسبوك"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" aria-label="تويتر"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" aria-label="إنستغرام"><i className="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" aria-label="لينكد إن"><i className="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="wpo-lower-footer">
-                <div className="container">
-                    <div className="row g-0">
-                        <div className="col col-lg-6 col-12">
-                            <p className="copyright"> Copyright &copy; 2024 Medically by <Link onClick={ClickHandler} to="/">wpOceans</Link>.
-                                All
-                                Rights Reserved.</p>
-                        </div>
-                        <div className="col col-lg-6 col-12">
+                    <div className="col-lg-2 col-md-6 col-12">
+                        <div className="footer-widget link-widget">
+                            <h3>روابط سريعة</h3>
                             <ul>
-                                <li><Link onClick={ClickHandler} to="/privace">Privace & Policy</Link></li>
-                                <li><Link onClick={ClickHandler} to="/terms">Terms</Link></li>
-                                <li><Link onClick={ClickHandler} to="/about">About us</Link></li>
-                                <li><Link onClick={ClickHandler} to="/faq">FAQ</Link></li>
+                                <li><Link onClick={ClickHandler} to="/">الرئيسية</Link></li>
+                                <li><Link onClick={ClickHandler} to="/about">من نحن</Link></li>
+                                <li><Link onClick={ClickHandler} to="/services">خدماتنا</Link></li>
+                                <li><Link onClick={ClickHandler} to="/doctors">أطباؤنا</Link></li>
+                                <li><Link onClick={ClickHandler} to="/contact">اتصل بنا</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-12">
+                        <div className="footer-widget service-widget">
+                            <h3>خدماتنا الطبية</h3>
+                            <ul>
+                                <li><Link onClick={ClickHandler} to="/cardiology">أمراض القلب والأوعية الدموية</Link></li>
+                                <li><Link onClick={ClickHandler} to="/orthopedics">جراحة العظام</Link></li>
+                                <li><Link onClick={ClickHandler} to="/neurology">طب الأعصاب</Link></li>
+                                <li><Link onClick={ClickHandler} to="/pediatrics">طب الأطفال</Link></li>
+                                <li><Link onClick={ClickHandler} to="/gynecology">النساء والولادة</Link></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-12">
+                        <div className="footer-widget contact-widget">
+                            <h3>معلومات التواصل</h3>
+                            <div className="contact-info">
+                                <div className="info-item">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h4>العنوان:</h4>
+                                        <p>شارع الملك فهد، الرياض<br />المملكة العربية السعودية</p>
+                                    </div>
+                                </div>
+                                <div className="info-item">
+                                    <i className="fas fa-phone"></i>
+                                    <div>
+                                        <h4>الهاتف:</h4>
+                                        <p>+٩٦٦ ١١ ٢٣ ٤٥٦٧</p>
+                                    </div>
+                                </div>
+                                <div className="info-item">
+                                    <i className="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>البريد الإلكتروني:</h4>
+                                        <p>info@mastersclinics.com</p>
+                                    </div>
+                                </div>
+                                <div className="info-item">
+                                    <i className="fas fa-clock"></i>
+                                    <div>
+                                        <h4>ساعات العمل:</h4>
+                                        <p>السبت - الخميس: ٨:٠٠ص - ١٠:٠٠م<br />الجمعة: ٢:٠٠م - ١٠:٠٠م</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="footer-bottom">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 col-12">
+                            <p>&copy; ٢٠٢٤ العيادات المتخصصة. جميع الحقوق محفوظة.</p>
+                        </div>
+                        <div className="col-lg-6 col-12">
+                            <ul className="footer-bottom-links">
+                                <li><Link onClick={ClickHandler} to="/privacy">سياسة الخصوصية</Link></li>
+                                <li><Link onClick={ClickHandler} to="/terms">الشروط والأحكام</Link></li>
+                                <li><Link onClick={ClickHandler} to="/sitemap">خريطة الموقع</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -105,10 +112,3 @@ const Footer = (props) => {
 }
 
 export default Footer;
-
-
-
-
-
-
-
