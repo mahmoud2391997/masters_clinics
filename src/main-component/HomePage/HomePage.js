@@ -15,17 +15,19 @@ import CtafromSection from '../../components/CtafromSection/CtafromSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import ContactBar from '../../components/Navbar/socialMedia';
+import Slider from 'react-slick';
+import ImageSlider from '../../components/adsSlider';
 
 const HomePage = () => {
     return (
-        <Fragment>
+        <div>
             <ContactBar />
             <Navbar hclass={'wpo-site-header'}  Logo={"https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/dEYvd/lBmMUm3zZyt94KtrsYYdL6UrUEOoncu4UJnK9VhR.png"} />
             <Hero hclass={'static-hero'} />
-            <AppointmentSection hclass={'appointment_section'}/>
+            <ImageSlider />
+            <ProcessSection hclass={"work_section section-padding"}/>
             <ServiceSection hclass={"service_section section-padding"} />
             <About hclass={'about_section section-padding'}/>
-            <ProcessSection hclass={"work_section section-padding"}/>
             <ProjectSection hclass={'project_section section-padding'}/>
             <Testimonial tClass={'testimonial_section testimonial_section_slider'} />
             <CtaSection tClass={'cta_section'} />
@@ -35,7 +37,7 @@ const HomePage = () => {
             <CtafromSection hclass={'ctafrom_section'}/>
             <Footer hclass={'wpo-site-footer'}/>
             <Scrollbar />
-        </Fragment>
+        </div>
     )
 };
 export default HomePage;
