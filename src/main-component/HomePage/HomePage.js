@@ -27,14 +27,10 @@ const HomePage = () => {
             <ImageSlider />
             <ProcessSection hclass={"work_section section-padding"}/>
             <ServiceSection hclass={"service_section section-padding"} />
-            <About hclass={'about_section section-padding'}/>
-            <ProjectSection hclass={'project_section section-padding'}/>
-            <Testimonial tClass={'testimonial_section testimonial_section_slider'} />
-            <CtaSection tClass={'cta_section'} />
             <TeamSection hclass={'team_section section-padding'}/>
             <FunFact hclass={'funfact_section'} />
+            <Testimonial tClass={'testimonial_section testimonial_section_slider'} />
             <BlogSection tClass={'blog_section section-padding'}/>
-            <CtafromSection hclass={'ctafrom_section'}/>
             <Footer hclass={'wpo-site-footer'}/>
             <Scrollbar />
         </div>

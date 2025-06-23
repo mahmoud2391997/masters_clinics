@@ -1,35 +1,20 @@
-import { createStore, compose, applyMiddleware } from "redux";
-
-import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
-
-// middlewares
+import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
-// Import custom components
-import rootReducer from "./reducers/rootReducers";
-
-const middleware = [thunk];
-
-const persistConfig = {
-  key: "root",
-  storage,
-};
+import rootReducer from "./rootReducer";
+import persistConfig from "./presistConfig";
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-let store = createStore(
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(
   persistedReducer,
-  compose(
-    applyMiddleware(...middleware),
-    //For working redux dev tools in chrome (https://github.com/zalmoxisus/redux-devtools-extension)
-    window.__REDUX_DEVTOOLS_EXTENSION__
-      ? window.__REDUX_DEVTOOLS_EXTENSION__ &&
-          window.__REDUX_DEVTOOLS_EXTENSION__()
-      : (f) => f
-  )
+  composeEnhancers(applyMiddleware(thunk))
 );
 
-let persistor = persistStore(store);
+const persistor = persistStore(store);
 
 export { store, persistor };
